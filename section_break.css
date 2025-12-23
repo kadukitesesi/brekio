@@ -1,0 +1,161 @@
+.section_time_break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 56px 80px 80px 80px;
+}
+
+.content_time_break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+}
+
+.text_content_title {
+    font-weight: 800;
+    font-size: 72px;
+    background: linear-gradient(90deg, #C026D3 0%, #701A75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.caption {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.text_content_paragraph {
+    color: #475569;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+
+.form {
+  display: flex;
+  gap: 16px;
+  padding:30px;
+}
+
+#enter_name {
+    padding: 13px 24px;
+    border: 1px solid #CBD5E1;
+    width:476px;
+    border-radius: 26px;
+    height: 64px;
+}
+
+#enter_name::placeholder {
+    font-size: 24px;
+    font-weight: 400;
+    color:#475569;
+    line-height: 64px;
+}
+
+
+.button_start_form {
+    padding: 20px 24px;
+    border-radius: 26px;
+    width: 208px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    height: 64px;
+}
+
+
+.img_time_break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:465px;
+    border-radius: 20px;
+    max-width: 100%;
+    background: url("./assets/img/planning.png") no-repeat center / contain;
+}
+
+
+@media (max-width:768px) {
+
+    .text_content {
+        padding: 16px;
+    }
+
+    .text_content_title {
+        font-size: 32px;
+    }
+
+    .text_content_paragraph {
+        font-size: 16px;
+    }
+
+    #enter_name {
+        width: 221px;
+        border-radius: 19px;
+    }
+
+    .section_time_break {
+        padding:32px 16px 32px 16px;
+        gap: 8px;
+    }
+
+    .form {
+        gap: 8px;
+        padding: 24px 16px 32px 16px;
+    }
+
+    .button_start_form {
+        padding: 12px;
+        border-radius: 19px;
+        width: 130px;
+        font-size: 16px;
+    }
+
+    #enter_name::placeholder {
+        font-size: 16px;
+    }
+
+    .img_time_break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 361px;
+    height:222px;
+    border-radius: 20px;
+    max-width: 100%;
+    background: url("./assets/img/mobile_planning.png") no-repeat center / contain;
+}
+
+}
+
+@media (max-width: 360px) {
+    .form {
+        gap: 4px;
+        padding: 24px 5px 32px 5px;
+    }
+
+    .button_start_form {
+        padding: 8px;
+        width: 100px;
+    }
+
+    #enter_name {
+        width: 200px;
+        border-radius: 19px;
+    }
+
+}
