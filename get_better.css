@@ -16,11 +16,11 @@
     height: 246px;
 }
 
-.text_content_title_get {
+.text_content_secondary_title {
     font-weight: 800;
     font-size: 56px;
     line-height: 110.00000000000001%;
-}   
+}
 
 
 .paragraph_get_better {
@@ -42,10 +42,23 @@
     height: 100%;
 }
 
+.button_text {
+    padding: 12px;
+    border-radius: 19px;
+    width: 144px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    height: 48px;
+}
+
 @media (max-width: 768px) {
 
-    
+
     .section_get_better {
+        width: 100%;
         padding: 48px 16px 24px;
         gap: 24px;
     }
@@ -67,7 +80,7 @@
         text-align: center;
     }
 
-    .text_content_title_get {
+    .text_content_secondary_title {
         font-size: 24px;
         font-weight: 700;
     }

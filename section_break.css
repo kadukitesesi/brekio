@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-height: 227px;
 }
 
 .text_content {
@@ -21,7 +22,7 @@
     text-align: center;
 }
 
-.text_content_title {
+.text_content_primary_title {
     font-weight: 800;
     font-size: 72px;
     background: linear-gradient(90deg, #C026D3 0%, #701A75 100%);
@@ -95,7 +96,7 @@
         padding: 16px;
     }
 
-    .text_content_title {
+    .text_content_primary_title {
         font-size: 32px;
     }
 
