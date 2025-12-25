@@ -13,12 +13,10 @@
     flex-direction: column;
 }
 
-
 .container_rows {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px;
-
     max-width: 1280px;
     width: 100%;
     box-sizing: border-box;

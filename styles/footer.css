@@ -1,0 +1,126 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.footer_list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 1px solid #E2E8F0;
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    column-gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-bottom-width: 1px;
+    max-width: 1280px;
+}
+
+.footer_list_title_column {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 110.00000000000001%;
+    max-height: 42px;
+}
+
+.footer_sublist {
+    list-style: none;
+}
+
+.footer_list_item {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    max-height: 46px;
+}
+
+.footer_list_title_column, .footer_list_item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 173.33px;
+    color:#475569;
+}
+
+
+.footer_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    max-height: 72px;
+    gap: 4px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
+.copyright, .social {
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color:#475569 ;
+}
+
+.copyright_logo {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 110%;
+    vertical-align: middle;
+    color: #0F172A;
+}
+
+.social {
+    gap: 16px;
+}
+
+.copyright {
+    gap: 4px;
+}
+
+
+@media (max-width: 1024px) {
+    .footer_list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    footer {
+        padding:0 16px;
+    }
+
+    .footer_list {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer_bottom, .copyright {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
