@@ -3,7 +3,7 @@ const path = "./assets/img/"
 
 function verifyWidthScreen() {
     const widthScreen = window.innerWidth;
-    if (widthScreen >= 768) {
+    if (widthScreen >= 765) {
         image.src = `${path}get_better_image.png`;
     } else {
        image.src = `${path}get_better_image_mobile.png`;

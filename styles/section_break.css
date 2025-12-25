@@ -86,7 +86,7 @@
     height:465px;
     border-radius: 20px;
     max-width: 100%;
-    background: url("./assets/img/planning.png") no-repeat center / contain;
+    background: url("../assets/img/planning.png") no-repeat center / contain;
 }
 
 
@@ -140,8 +140,8 @@
     height:222px;
     border-radius: 20px;
     max-width: 100%;
-    background: url("./assets/img/mobile_planning.png") no-repeat center / contain;
-}
+    background: url("../assets/img/mobile_planning.png") no-repeat center / contain;
+    }
 
 }
 
