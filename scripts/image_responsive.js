@@ -1,6 +1,6 @@
 const getBetter = document.getElementById("get_better_image");
 const timeBreak = document.getElementById("img_time_break");
-const path = "./assets/img/"
+const path = "./assets/img/main/"
 
 function verifyWidthScreen(image ,imageName, imageNameMobile) {
     const widthScreen = window.innerWidth;
