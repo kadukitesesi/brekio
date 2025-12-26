@@ -48,7 +48,7 @@ header {
     display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width:765px) {
     header {
         padding: 16px 16px 0px 16px;
     }
