@@ -1,19 +1,14 @@
 .faq {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 80px;
     width: 100%;
     padding: 80px;
-    flex-direction: column;
     background-color: #F1F5F9;
 }
 
-.icon_down {
-    height: 24px;
-    width: 24px;
-}
-
-.faq_list {
+.faq__list {
     list-style: none;
     max-width: 1280px;
     width: 100%;
@@ -22,54 +17,55 @@
     gap: 24px;
 }
 
-.faq_list_item {
+.paragraph_faq {
+        text-align: center;
+}
+
+.faq_list_item__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: 500;
-    font-style: Medium;
     font-size: 20px;
-    line-height: 110.00000000000001%;
-    letter-spacing: 0%;
-    max-height: 88px;
+    line-height: 1.1;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 6px 0px #00000012;
     box-shadow: 0px 10px 15px -3px #0000001A;
     border-radius: 10px;
     padding: 32px;
 }
 
+.icon_down {
+    width: 24px;
+    height: 24px;
+}
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
-    .faq_list {
-    align-items: center;
-    max-width: 361px;
-    width: 100%;
+    .faq {
+        padding: 48px 16px;
+        gap: 32px;
     }
-    
-    .faq_list_item {
-        max-height: 86px;
-        min-height: 68px;
+
+    .paragraph_faq {
+        max-width: 361px;
         font-size: 16px;
-        line-height: 110.00000000000001%;
-        letter-spacing: 0%;
-        border-radius: 10px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .faq__list {
+        max-width: 361px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .faq_list_item__item {
+        width: 100%;
+        font-size: 16px;
         padding: 16px;
     }
 
-    .faq {
-        width: 100%;
-        height: 738px;
-        gap: 32px;
-        padding-top: 48px;
-        padding-right: 16px;
-        padding-bottom: 48px;
-        padding-left: 16px;
-    }
-
     .question {
-        width: 289px;
-        max-height: 54px;
-        min-height: 36px;
+        max-width: 289px;
     }
 }

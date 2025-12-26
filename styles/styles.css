@@ -11,3 +11,90 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #ffff;
 }
+
+.content_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:24px;
+    max-width: 900px;
+}
+
+.content_text_primary_title {
+    font-weight: 800;
+    font-size: 72px;
+    background: linear-gradient(90deg, #C026D3 0%, #701A75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content_text_secondary_title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 110.00000000000001%;
+}
+
+.base_button {
+    color: #fff;
+    background-color: #C026D3;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #C026D3;
+}
+
+.button_text {
+    padding: 12px;
+    border-radius: 19px;
+    width: 144px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    height: 48px;
+}
+
+
+@media (max-width: 1300px) {
+    .content_text {
+        max-width: 720px;
+    }
+
+        .content_text_secondary_title {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+
+@media (max-width:640px) {
+
+    .content_text_primary_title {
+        font-size: 32px;
+    }
+
+    .content_text {
+        width: 100%;
+        max-width: 361px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content_text_secondary_title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    
+    .button_text {
+        padding: 12px;
+        border-radius: 19px;
+        width: 144px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        height: 48px;
+    }
+}

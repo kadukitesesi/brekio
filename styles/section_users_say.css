@@ -1,4 +1,4 @@
-.section_say {
+.users_say {
     background: #FDF4FF;
     width: 100%;
     display: flex;
@@ -8,6 +8,7 @@
     gap: 80px;
     position: relative;
     overflow: hidden;
+    padding: 80px 0;
 }
 
 .deco_right {
@@ -24,7 +25,7 @@
     z-index: 1;
 }
 
-.container_say_user {
+.users_say__content {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 6px 0px #00000012;
     box-shadow: 0px 10px 15px -3px #0000001A;
@@ -34,28 +35,25 @@
     padding: 48px;
     position: relative;
     z-index: 2;
-    margin-bottom: 80px;
 }
 
 
-.title_say_user {
+.content_text__title {
     font-family: Roboto;
     font-weight: 700;
-    font-style: Bold;
     font-size: 32px;
-    line-height: 110.00000000000001%;
+    line-height: 110%;
     text-align: center;
     padding-bottom: 24px;
 }
 
 .text_content_title_say {
-    padding: 48px 16px 32px 16px;
     text-align: center;
     position: relative;
     z-index: 2;
 }
 
-.paragraph_say_user {
+.content_text__paragraph {
     font-weight: 400;
     font-size: 24px;
     line-height: 160%;
@@ -64,17 +62,16 @@
     height: 114px;
 }
 
-.name_say_user {
+.profile__name_say {
     color: #0F172A;
     font-family: Roboto;
     font-weight: 400;
-    font-style: Regular;
     font-size: 18px;
     line-height: 160%;
     text-align: center;
 }
 
-.profile_say_user {
+.users_say__profile__user_thumb_say {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,9 +79,8 @@
     padding-top: 56px;    
 }
 
-.role_say_user {
+.profile__role_say {
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 140%;
     text-align: center;
@@ -103,7 +99,7 @@
 
     }
 
-    .container_say_user {
+    .users_say__content {
         background-color: #FFFFFF;
         box-shadow: 0px 0px 6px 0px #00000012;
         box-shadow: 0px 10px 15px -3px #0000001A;
@@ -113,11 +109,14 @@
     }
 
     .text_content_title_say {
+        padding: 0;
+        text-align: center;
+        position: relative;
         text-align: center;
         position: relative;
     }
 
-    .title_say_user {
+    .content_text__title {
         font-weight: 700;
         font-size: 24px;
         line-height: 160%;
@@ -126,10 +125,9 @@
         padding-bottom: 24px;
     }
 
-    .paragraph_say_user {
+    .content_text__paragraph {
         font-family: Roboto;
         font-weight: 400;
-        font-style: Regular;
         font-size: 16px;
         line-height: 140%;
         letter-spacing: 0%;
@@ -138,7 +136,7 @@
         max-height: 88px; 
     }
 
-    .section_say {
+    .users_say {
         width: 100%;
         height: 495px;
         gap: 32px;
@@ -148,7 +146,7 @@
         padding-left: 16px;
     }
 
-    .profile_say_user {
+    .users_say__profile__user_thumb_say {
         padding-top: 24px;    
     }
 
