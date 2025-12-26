@@ -51,8 +51,8 @@
     .container_rows__list_tools {
         grid-template-columns: repeat(2, 1fr);
         max-width: 768px;
-        padding: 0 24px;
         margin: 0 auto;
+        align-self: center;
     }
 
     .container_rows__list_tools > li:last-child {
