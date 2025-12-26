@@ -77,8 +77,9 @@
     .favorite_tool__container_rows {
         grid-template-columns: 1fr;
         gap: 32px;
-        max-width: 100%;
-        padding: 16px 0px;
+        max-width:361px;
+        width: 100%;
+        padding: 16px 24px;
     }
 
     .tool {
