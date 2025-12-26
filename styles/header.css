@@ -1,28 +1,30 @@
 .break_logo {
-    font-weight:700;
+    font-weight: 700;
     font-size: 32px;
 }
 
 .io_logo {
-    color:#701A75;
+    color: #701A75;
 }
 
-
 header {
-    width:100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     padding: 24px 80px;
     color: #0F172A;
+    position: relative;
+    z-index: 100;
 }
 
 .top_menu {
     padding: 12px 8px;
 }
 
-.top_menu_list, a {
+.top_menu_list,
+a {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,38 +48,97 @@ header {
 
 #top_menu_list_mobile {
     display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 101;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.x-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+
+.x-icon .line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0F172A;
+    top: 50%;
+    left: 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.x-icon .line1 {
+    transform: rotate(45deg);
+}
+
+.x-icon .line2 {
+    transform: rotate(-45deg);
 }
 
 @media (max-width:765px) {
     header {
-        padding: 16px 16px 0px 16px;
+        padding: 16px;
+        position: relative;
+        z-index: 100;
     }
 
     #top_menu_list_mobile {
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+    }
+
+    #top_menu_list_mobile img.menu-icon {
+        width: 32px;
+        height: 32px;
+        transition: 0.3s;
     }
 
     .top_menu_list {
-        transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease;
-        overflow: hidden;
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        max-width:300px;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        box-shadow: -3px 0 15px rgba(0,0,0,0.1);
+        transition: right 0.35s ease;
+        z-index: 99;
     }
 
     .top_menu_list_mobile {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        opacity: 1;
-        transform: translateY(0);
-        max-height: 300px;
+        right: 0;
     }
 
-    .top_menu_list_none {
-        display: none;
+    .top_menu_list_item {
+        font-size: 20px;
+        font-weight: 500;
+        transform: translateX(20px);
         opacity: 0;
-        transform: translateY(-10px);
-        max-height: 0;
+        transition: all 0.3s ease;
+    }
+
+    .top_menu_list_mobile .top_menu_list_item {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
