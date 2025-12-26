@@ -1,4 +1,4 @@
-.section_stories {
+.stories {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,10 +10,9 @@
 
 .paragraph_stories {
     text-align: center;
-    padding: 24px 10px 24px 10px;
 }
 
-.card_container {
+.stories__cards_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +21,7 @@
     flex-wrap: wrap;
 }
 
-.card_content {
+.stories__cards_container__card {
     border: 1px solid #E2E8F0;
     box-shadow: 0px 0px 4px 0px #00000012;
     box-shadow: 0px 4px 6px -1px #0000001A;
@@ -31,9 +30,20 @@
     border-radius: 10px; 
 }
 
-.image_card {
+.card__image_card {
     max-width: 100%;
-    height: 220px;
+    max-height: 220px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.badge_card {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
 }
 
 .image_card_child {
@@ -43,57 +53,65 @@
     height: 100%;
 }
 
-.user_card {
+.desc__user_card {
     display: flex;
     flex-direction: row;
     gap:8px;
-    height: 48px;
-    width: 234px;
+    max-height: 48px;
+    max-width: 234px;
+    width: 100%;
+    height: 100%;
 }
 
-.desc_card {
+.card__desc_card {
     display: flex;
     flex-direction: row;
     padding: 16px;
     gap: 16px;
 }
 
-.card_text {
+.desc__card_text {
     display: block;
     width: 178px;
     height: 42px;
 
 }
 
-.card_paragraph {
+.card_text__card_paragraph {
     font-size: 14px;
     color: #475569;
     font-weight: 400;
 }
 
-.card_title {
+.card_text__card_title {
     font-size:16px;
     font-weight: 400;
     color: #21272A;
     line-height: 140%;
 }
 
-.icon_card {
+.desc__user_card__icon {
     display: flex;
     gap: 10px;
     border-radius: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+    .stories__cards_container {
+        max-width: 600px;
+    }
+}
 
 
-    .section_stories {
+@media (max-width: 640px) {
+
+    .stories {
         width: 100%;
         padding: 16px;
         gap: 32px;
     }
 
-    .card_container {
+    .stories__cards_container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -104,12 +122,10 @@
     .paragraph_stories {
         max-width: 361px;
         width: 100%;
-        padding: 24px 0px;
         font-size: 16px;
         font-weight: 400;
         line-height: 140%;
         letter-spacing: 0%;
         text-align: center;
     }
-
 }

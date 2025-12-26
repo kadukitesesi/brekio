@@ -7,7 +7,7 @@ footer {
     padding-left: 80px;
 }
 
-.footer_list {
+.footer__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     border-bottom: 1px solid #E2E8F0;
@@ -21,27 +21,26 @@ footer {
     max-width: 1280px;
 }
 
-.footer_list_title_column {
+.footer__list__column_title {
     font-weight: 500;
-    font-style: Medium;
+     
     font-size: 16px;
     line-height: 110.00000000000001%;
     max-height: 42px;
 }
 
-.footer_sublist {
+.footer__list__sublist {
     list-style: none;
 }
 
-.footer_list_item {
+.footer__list__sublist__item {
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 140%;
     max-height: 46px;
 }
 
-.footer_list_title_column, .footer_list_item {
+.footer__list__column_title, .footer__list__sublist__item {
     padding-top: 12px;
     padding-bottom: 12px;
     max-width: 173.33px;
@@ -49,7 +48,7 @@ footer {
 }
 
 
-.footer_bottom {
+.footer__bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,45 +61,45 @@ footer {
 }
 
 
-.copyright, .social {
+.footer_bottom__copyright, .footer_bottom__social {
     display: flex;
     flex-direction: row;
 }
 
-.copyright_text {
+.footer_bottom__copyright_text {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color:#475569 ;
 }
 
-.copyright_logo {
+.footer_bottom__copyright_logo {
     font-weight: 500;
-    font-style: Medium;
+     
     font-size: 20px;
     line-height: 110%;
     vertical-align: middle;
     color: #0F172A;
 }
 
-.social {
+.footer_bottom__social {
     gap: 16px;
 }
 
-.copyright {
+.footer_bottom__copyright {
     gap: 4px;
 }
 
 
 @media (max-width: 1024px) {
-    .footer_list {
+    .footer__list {
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
 }
 
 @media (max-width: 768px) {
-    .footer_list {
+    .footer__list {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
@@ -112,14 +111,14 @@ footer {
         padding:0 16px;
     }
 
-    .footer_list {
+    .footer__list {
         grid-template-columns: 1fr;
         gap: 24px;
         padding-top: 12px;
         padding-bottom: 12px;
     }
 
-    .footer_bottom, .copyright {
+    .footer__bottom, .footer_bottom__copyright {
         flex-direction: column;
         gap: 16px;
     }

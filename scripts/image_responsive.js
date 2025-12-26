@@ -1,15 +1,21 @@
-const image = document.getElementById("get_better_image");
+const getBetter = document.getElementById("get_better_image");
+const timeBreak = document.getElementById("img_time_break");
 const path = "./assets/img/"
 
-function verifyWidthScreen() {
+function verifyWidthScreen(image ,imageName, imageNameMobile) {
     const widthScreen = window.innerWidth;
     if (widthScreen >= 765) {
-        image.src = `${path}get_better_image.png`;
+        image.src = `${path}${imageName}`;
     } else {
-       image.src = `${path}get_better_image_mobile.png`;
+       image.src = `${path}${imageNameMobile}`;
     }
 }
 
-verifyWidthScreen();
+function updateImages() {
+    verifyWidthScreen(timeBreak,'planning.png', 'mobile_planning.png');
+    verifyWidthScreen(getBetter, 'get_better_image.png', 'get_better_image_mobile.png');   
+}
 
-window.addEventListener('resize', verifyWidthScreen);
+updateImages();
+
+window.addEventListener("resize", updateImages);

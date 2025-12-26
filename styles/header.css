@@ -38,14 +38,6 @@ header {
     color: #0F172A;
 }
 
-.base_button {
-    color: #fff;
-    background-color: #C026D3;
-    font-family: 'Roboto', sans-serif;
-    border: 2px solid #C026D3;
-
-}
-
 .button_start_header {
     border-radius: 18px;
     padding: 12px 20px;
